@@ -1,16 +1,18 @@
-from flask_restful import Resource
+from fastapi import APIRouter
+router = APIRouter()
+# Criar os endpoints de Cliente: GET, POST, PUT, DELETE
+@router.get("/cliente/{id}", tags=["cliente"])
+def get_cliente(id: int):
+    return {"msg": "get executado"}, 200
 
-# Criar os endpoints de Funcionario: GET, POST, PUT, DELETE
-class Cliente(Resource):
+@router.post("/cliente/{id}", tags=["cliente"])
+def post_cliente(id: int):
+    return {"msg": "post executado"}, 200
 
-    def get(self, id):
-        return {"msg": "get executado com suceso"}, 200
+@router.put("/cliente/{id}", tags=["cliente"])
+def put_cliente(id: int):
+    return {"msg": "put executado"}, 201
 
-    def post(self, id):
-        return {"msg": "post executado com sucesso"}, 201
-
-    def put(self, id):
-        return {"msg": "put executado  com sucesso"}, 201
-        
-    def delete(self, id):
-        return {"msg": "delete executado com sucesso"}, 201
+@router.delete("/cliente/{id}", tags=["cliente"])
+def delete_cliente(id: int):
+    return {"msg": "delete executado"}, 201
