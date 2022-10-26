@@ -1,0 +1,45 @@
+### Verbo GET – listar todos
+GET http://localhost:8000/funcionario/ HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+### Verbo GET – listar todos
+
+### Verbo GET – listar com id
+GET http://localhost:8000/funcionario/2 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo POST – adicionar
+POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+content-type: application/json
+
+{
+    "nome" : "Edson passos",
+    "cpf" : "56984562656",
+    "telefone" : "4995634567",
+    "senha" : "bolinhas",
+    "matricula" : "12345",
+    "grupo" : 1
+}
+
+### Verbo PUT – atualiza
+PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+content-type: application/json
+
+{
+    "nome" : "Edson passos",
+    "cpf" : "12345678909",
+    "telefone" : "49898989",
+    "senha" : "abc",
+    "matricula" : "56461",
+    "grupo" : 2
+}
+
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
