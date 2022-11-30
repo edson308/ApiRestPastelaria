@@ -15,7 +15,7 @@ x-key: abcBolinhasKey
 content-type: application/json
 
 {
-    "nome" : "Edson Passos",
+    "nome" : "pastel de batat",
     "preco" : 12.00,
     "qtd" : 10,
     "descricao" : "Descrição ",

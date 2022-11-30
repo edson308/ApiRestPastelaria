@@ -16,12 +16,12 @@ x-key: abcBolinhasKey
 content-type: application/json
 
 {
-    "nome" : "Edson passos",
+    "nome" : "Edson ",
     "cpf" : "56984562656",
     "telefone" : "4995634567",
     "senha" : "bolinhas",
     "matricula" : "12345",
-    "grupo" : 1
+    "grupo" : 1,
 }
 
 ### Verbo PUT – atualiza
@@ -40,6 +40,6 @@ content-type: application/json
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+DELETE http://127.0.0.1:8000/funcionario/12 HTTP/1.1
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
